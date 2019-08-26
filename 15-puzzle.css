@@ -1,0 +1,177 @@
+::selection {
+  background: transparent;
+}
+p {
+  margin: 0;
+  font: 12px/150% Arial;
+  text-align: center;
+  color: #888;
+}
+p a {
+  color: #888;
+}
+
+#controls {
+  text-align: center;
+}
+#controls button {
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  margin: 25px 2px;
+  border: 0;
+  border-radius: 4px;
+  background: #232266;
+  font: bold 14px Arial;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#controls button:hover {
+  background: #1f1f93;
+}
+
+#puzzle {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  /* margin: 0 auto;
+  margin-top: 125px; */
+  border: 10px solid #657cf0;
+  border-radius: 4px;
+}
+#puzzle span {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+#puzzle span.number {
+  cursor: pointer;
+  font: bold 36px/80px Arial;
+  text-align: center;
+  text-shadow: 4px 3px 0 rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+#puzzle span.empty {
+  background: transparent;
+}
+#puzzle span.number.light {
+  background: #a7007d;
+}
+#puzzle span.number.dark {
+  background: #657cf0;
+}
+
+#puzzle.animate span {
+  -webkit-transition: 0.15s left, 0.15s top;
+  transition: 0.15s left, 0.15s top;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.sidebar {
+  background-color: #1f2830;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.sidebar h1 {
+  color: black;
+}
+
+.rettangoli-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rettangoli {
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.portfolio {
+  background: url("back.webp") no-repeat scroll top transparent;
+  background-size: contain;
+  background-position: center center;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+.fa-bars {
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked ~ .portfolio {
+  left: 0;
+}
+
+input:checked ~ label {
+  left: 0;
+}
+
+label {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+li {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+/* .rettangoli {
+	border-bottom: 1px solid white;
+	//background-color: black;
+}
+
+.rettangoli-up {
+	border-top: 1px solid white;
+} */
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-size: 35px;
+  padding: 5px;
+  color: white;
+}

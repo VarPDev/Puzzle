@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VarPuzzle</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="15-puzzle.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <div id="all" class="main-wrap">
+      <input id="slide-sidebar" type="checkbox" role="button" />
+      <label for="slide-sidebar"
+        ><i class="fa fa-bars fa-4x" style="margin-left: 10px"></i
+      ></label>
+      <div id="sidebar-menu" class="sidebar">
+        <div class="title">Pako</div>
+        <div class="rettangoli-container">
+          <span class="rettangoli rettangoli-up"
+            ><a
+              target="_blank"
+              href="http://www.pasqualedelucia.altervista.org/"
+              ><li class="fa fa-user-circle"></li></a
+          ></span>
+          <span class="rettangoli"
+            ><a
+              target="_blank"
+              href="https://www.linkedin.com/in/pasquale-de-lucia-web-dev/"
+              ><li class="fa fa-linkedin"></li></a
+          ></span>
+          <span class="rettangoli"
+            ><a
+              target="_blank"
+              href="https://www.instagram.com/pasqualo96/?hl=it"
+              ><li class="fa fa-instagram"></li></a
+          ></span>
+          <span class="rettangoli"
+            ><a target="_blank" href="https://github.com/VarPDev"
+              ><li class="fa fa-github"></li></a
+          ></span>
+          <span class="rettangoli"
+            ><a
+              target="_blank"
+              href="https://stackoverflow.com/users/8172268/pasquale-de-lucia"
+              ><li class="fa fa-stack-overflow"></li></a
+          ></span>
+        </div>
+      </div>
+
+      <div class="portfolio">
+        <div id="puzzle"></div>
+        <div id="controls">
+          <button id="solve">Solve</button>
+          <button id="scramble">Scramble</button>
+        </div>
+      </div>
+    </div>
+    <script src="15-puzzle.js"></script>
+  </body>
+</html>
